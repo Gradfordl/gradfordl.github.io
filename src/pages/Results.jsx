@@ -9,8 +9,9 @@ function Results({total}) {
         { id: 5, name: "eevee", type: "Normal" },
         { id: 6, name: "croagunk", type: "Poison"},
       ];
-      const finalScore = 6
-    // const finalScore = Math.floor(total / 10)
+    //   const finalScore = 6
+    const finalScore = Math.floor(total / 10)
+    console.log(finalScore)
     let finalPokemon = results.find((pokemon) => pokemon.id === finalScore)
   return (
     <div>
