@@ -1,42 +1,35 @@
 import { useParams, Link } from "react-router-dom";
+import { useState } from "react";
 import questions from "../data";
 
 function QuestionCard() {
   const params = useParams();
 
-  questions.find((question) => {
-    console.log(question.text);
-    return params.id == question.id;
-  });
-  //need to display individual question text and options on screen
+//   let question = questions.find((question) => {
+//     console.log(question.text);
+//     return params.id == question.id;
+//   });
+const [question, setQuestion] = useState(null)
+
+  
+  for ( let i = 0; i < questions.length; i++) {
+    let currentQuestion =  questions[i];
+    console.log(questions)
+   
+  }
+
+
+    //need to display individual question text and options on screen
 
   return (
     <div className="question-card">
-      <h2>QUESTION TEXT</h2>
-      {/* use <Link/> & onClick on link*/}
+      <h2>TEXT</h2>
+
       {/* <Link to={`/questions/${id}`}> ????? */}
-      {/* //initial setup for routes to questions */}
-      <Link to="/questions/2">
-        <div>QUESTION OPTION TEXT</div>
+
+      <Link to={`/questions/2`}> 
+        <div>HELLO</div>
       </Link>
-      <Link to="/questions/3">
-        <div>QUESTION OPTION TEXT</div>
-      </Link>
-      <Link to="/questions/4">
-        <div>QUESTION OPTION TEXT</div>
-      </Link>
-      <Link to="/questions/5">
-        <div>QUESTION OPTION TEXT</div>
-      </Link>
-      <Link to="/questions/6">
-        <div>QUESTION OPTION TEXT</div>
-      </Link>
-      {/* <ul>
-  <li>Option 1</li>
-  <li>Option 2</li>
-  <li>Option 3</li>
-  <li>Option 4</li>
-</ul> */}
     </div>
   );
 }

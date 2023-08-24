@@ -17,11 +17,11 @@ const questions = [
         { text: "Red", score: 3 },
         { text: "Blue", score: 4 },
         { text: "Purple", score: 5 },
-    ],
+    ]
   },
   {
     id: 2, 
-    text: "Where would you do on a dream vacation?",
+    text: "Where would you go on a dream vacation?",
     options: [
         { text: "Beach", score: 4 },
         { text: "Mountains", score: 2 },

@@ -7,26 +7,26 @@ import questions from "./data";
 
 
 function App(props) {
-  console.log(Routes)
   return (
     <div className='App'>
       <Header/>
-      <StartQuiz/>
       <Routes>
-      {questions.map(question =>
+        <Route key={0} path="/" element={<StartQuiz/>} />
+      {/* {questions.map(question =>
         <Route
           key={question.id}
-          path="/questions/:id"
-          element={<QuestionCard />}
-        />)}
+          path={`/questions/:${question.id}`}
+          element={<QuestionCard questions={questions} />}
+        />)} */}
+        <Route path="/questions/:id" element={<QuestionCard/>} />
       </Routes>
      
   
 
 
     {/* Final Result - Get your Pokemon */}
-    <h2>Your Starter Pokemon is...</h2>
-    <h1> [pokemon name] !</h1>
+    {/* <h2>Your Starter Pokemon is...</h2>
+    <h1> [pokemon name] !</h1> */}
     {/* <img src={img}/> */}
 
 
