@@ -1,35 +1,41 @@
-import { useParams, useNavigate, Link } from "react-router-dom";
-import { useState } from "react";
+import { useParams, useNavigate} from "react-router-dom";
 import questions from "../data";
 
-function QuestionCard() {
+function QuestionCard({total, setTotal}) {
   const params = useParams();
-  const navigate = useNavigate();
-  const [total, setTotal] = useState(0)
+  const navigate = useNavigate();   
 
   let currentQuestion = questions.find((question) => {
     // console.log(question.text);
     return params.id == question.id;
   });
 
-  function nextQuestion() {
+  function nextQuestion(score) {
     navigate(`/questions/${parseInt(params.id) + 1}`);
-    updateTotal()
+    updateTotal(score);
   }
 
-  function updateTotal() {
-    let score = currentQuestion.options.score
-    setTotal(total + score)
+  function updateTotal(score) {
+    setTotal(total + score);
   }
-console.log(total)
+  console.log(total);
+
   return (
     <div className="question-card">
       <h2>{currentQuestion.text}</h2>
       <div className="button-container">
-        <button onClick={nextQuestion}>{currentQuestion.options[0].text}</button>
-        <button onClick={nextQuestion}>{currentQuestion.options[1].text}</button>
-        <button onClick={nextQuestion}>{currentQuestion.options[2].text}</button>
-        <button onClick={nextQuestion}>{currentQuestion.options[3].text}</button>
+        <button onClick={() => nextQuestion(currentQuestion.options[0].score)}>
+          {currentQuestion.options[0].text}
+        </button>
+        <button onClick={() => nextQuestion(currentQuestion.options[1].score)}>
+          {currentQuestion.options[1].text}
+        </button>
+        <button onClick={() => nextQuestion(currentQuestion.options[2].score)}>
+          {currentQuestion.options[2].text}
+        </button>
+        <button onClick={() => nextQuestion(currentQuestion.options[3].score)}>
+          {currentQuestion.options[3].text}
+        </button>
       </div>
     </div>
   );

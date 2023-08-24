@@ -1,35 +1,45 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import pokemonArray from "../data"
 
-export default function Pokemon (props) {
-  const [pokemon, setPokemon] = useState([]);
+export default function Pokemon({ finalPokemon }) {
+  const [pokemon, setPokemon] = useState(null);
   // this is the API base url
-  const baseUrl = "https://pokeapi.co/api/v2/";
-  const endPoint = "pokemon/";
-  let selected = "bulbasaur";
-
-  // let url = "https://pokeapi.co/api/v2/pokemon/bulbasaur"
-  let url = baseUrl + endPoint + selected;
+  const url = `https://pokeapi.co/api/v2/pokemon/${finalPokemon}`;
   // console.log(url);
 
-  const getPokemon = async () => {
+  function getPokemon() {
     try {
-      const response = await axios.get(url);
-      const data = response.data;
-      setPokemon(data);
+      fetch(url)
+        .then((response) => response.json())
+        .then((data) => setPokemon(data));
     } catch (error) {
       console.log("ERROR", error);
     }
-  };
+  }
   useEffect(() => {
     getPokemon();
+    // console.log(pokemon.sprites.front_default)
+    console.log(pokemon.name)
+    console.log(pokemon.types[0].type.name)
   }, []);
 
-//   const loadad = () => {
-    return(
-      <div>{pokemon.name}
-      </div>
-    )
-//   }
-};
+
+
+  return (
+    <div>
+      <h1>Results!</h1>
+      <h2>Your Pokemon Personality is...  </h2>
+      <h3>{pokemon.name}</h3>
+      <p>You have a lot in common with {pokemon.name}! See below for a few fun facts about your pokemon.</p>
+      <ul>
+        <li>{pokemon.name} is a {pokemon.types[0].type.name} type pokemon</li>
+        <li> It's PokeDex # is {pokemon.id} </li>
+        <li>It knows {pokemon.moves.length} different moves</li>
+      </ul>
+      {/* <img src="" /> */}
+
+      {/* {pokemon.weight} */}
+    </div>
+  );
+  //   }
+}

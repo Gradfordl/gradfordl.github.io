@@ -1,12 +1,3 @@
-const results = [
-  { id: 1, name: "Bulbasaur", type: "Grass", about: "lorem" },
-  { id: 2, name: "Pikachu", type: "Electric", about: "lorem" },
-  { id: 3, name: "Charmander", type: "Fire", about: "lorem" },
-  { id: 4, name: "Squirtle", type: "Water", about: "lorem" },
-  { id: 5, name: "Eevee", type: "Normal", about: "lorem" },
-  { id: 6, name: "Croagunk", type: "Poison", about: "lorem" },
-];
-
 const questions = [
   {
     id: 1,

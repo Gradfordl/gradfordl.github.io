@@ -4,26 +4,20 @@ import QuestionCard from "./components/QuestionCard";
 import Header from "./components/Header";
 import './App.css'
 import Results from "./pages/Results";
+import { useState } from "react";
 
 
 function App(props) {
+  const [total, setTotal] = useState(0);
+
   return (
     <div className='App'>
       <Header/>
       <Routes>
         <Route path="/" element={<StartQuiz/>} />
-        <Route path="/questions/:id" element={<QuestionCard/>} />
-        <Route path="/questions/11" element={<Results/>} />
+        <Route path="/questions/:id" element={<QuestionCard total={total} setTotal={setTotal} />} />
+        <Route path="/questions/11" element={<Results total={total} />} />
       </Routes>
-     
-  
-
-
-    {/* Final Result - Get your Pokemon */}
-    {/* <h2>Your Starter Pokemon is...</h2>
-    <h1> [pokemon name] !</h1> */}
-    {/* <img src={img}/> */}
-
 
 
     </div>
