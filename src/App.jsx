@@ -3,7 +3,7 @@ import StartQuiz from './components/StartQuiz'
 import QuestionCard from "./components/QuestionCard";
 import Header from "./components/Header";
 import './App.css'
-import questions from "./data";
+import Results from "./pages/Results";
 
 
 function App(props) {
@@ -11,8 +11,9 @@ function App(props) {
     <div className='App'>
       <Header/>
       <Routes>
-        <Route key={0} path="/" element={<StartQuiz/>} />
+        <Route path="/" element={<StartQuiz/>} />
         <Route path="/questions/:id" element={<QuestionCard/>} />
+        <Route path="/questions/11" element={<Results/>} />
       </Routes>
      
   
