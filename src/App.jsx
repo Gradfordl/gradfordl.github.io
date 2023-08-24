@@ -12,12 +12,6 @@ function App(props) {
       <Header/>
       <Routes>
         <Route key={0} path="/" element={<StartQuiz/>} />
-      {/* {questions.map(question =>
-        <Route
-          key={question.id}
-          path={`/questions/:${question.id}`}
-          element={<QuestionCard questions={questions} />}
-        />)} */}
         <Route path="/questions/:id" element={<QuestionCard/>} />
       </Routes>
      
