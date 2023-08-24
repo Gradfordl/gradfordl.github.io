@@ -23,6 +23,7 @@ function QuestionCard({total, setTotal}) {
   return (
     <div className="question-card">
       <h2>{currentQuestion.text}</h2>
+      <img src={currentQuestion.image} alt={currentQuestion.alt} />
       <div className="button-container">
         <button onClick={() => nextQuestion(currentQuestion.options[0].score)}>
           {currentQuestion.options[0].text}
