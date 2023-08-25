@@ -5,8 +5,8 @@ const questions = [
     image: "/images/rainbow.png",
     alt:"Pokemon rainbow",
     options: [
-        { text: "Green", score: 1 },
-        { text: "Yellow", score: 2 },
+        { text: "Green", score: 2 },
+        { text: "Yellow", score: 5},
         { text: "Red", score: 3 },
         { text: "Blue", score: 4 },
     ]
@@ -18,7 +18,7 @@ const questions = [
     alt:"Squirtle on a beach",
     options: [
         { text: "Beach", score: 4 },
-        { text: "Mountains", score: 2 },
+        { text: "Mountains", score: 6 },
         { text: "Grand Canyon", score: 5 },
         { text: "Volcano", score: 3 }
     ]
@@ -29,8 +29,8 @@ const questions = [
     image: "/images/pika-donut.gif",
     alt:"Pikachu eating a donut",
     options: [
-        { text: "Donuts" , score: 1 },
-        { text: "Ice cream" , score: 3},
+        { text: "Donuts" , score: 4 },
+        { text: "Ice cream" , score: 6},
         { text: "Cupcakes" , score: 2},
         { text: "Pies" , score: 5 }
     ]
@@ -43,7 +43,7 @@ const questions = [
   options: [
     { text: "Hanging out with friends", score: 5 },
     { text: "Adventuring outside", score: 3},
-    { text: "Napping in my favorite spot", score: 1},
+    { text: "Napping in my favorite spot", score: 6},
     { text: "Splashing around in any water I can find", score: 4},
   ]
 },
@@ -56,7 +56,7 @@ const questions = [
     { text: "With caution", score: 2 },
     { text: "Tackle it" , score: 5 },
     { text: "Wing it", score: 3 },
-    { text: "Scurry away", score: 1 },
+    { text: "Scurry away", score: 6},
   ]
 },
 {
@@ -67,8 +67,8 @@ const questions = [
   options: [
     { text: "Most artistic", score: 4 },
     { text: "Class clown", score: 3 },
-    { text: "Most likely to succeed", score: 2 },
-    { text: "Most athletic", score: 1 },
+    { text: "Most likely to succeed", score: 6 },
+    { text: "Most athletic", score: 5 },
   ]
 },
  {
@@ -78,7 +78,7 @@ const questions = [
   alt:"Pokemon party",
   options: [
     { text: "Standing awkwardly in a corner", score: 5 },
-    { text: "At the snack table", score: 2 },
+    { text: "At the snack table", score: 6},
     { text: "On the dance floor", score: 4},
     { text: "Getting drinks", score: 3 },
   ]
@@ -92,7 +92,7 @@ const questions = [
     { text: "Musicals", score: 3 },
     { text: "Action/Adventure", score: 5 },
     { text: "Horror", score: 4 },
-    { text: "Comedy", score: 1 },
+    { text: "Comedy", score: 6},
   ]
 },
 {
@@ -103,7 +103,7 @@ const questions = [
   options: [
     { text: "Cofffee", score: 5 },
     { text: "Tea", score: 3 },
-    { text: "Water", score:1  },
+    { text: "Water", score: 6},
     { text: "Fruit juice", score: 4 },
   ]
 },
@@ -113,9 +113,9 @@ const questions = [
     image: "/images/psyduck.gif",
     alt:"Psyduck thinking",
     options: [
-      { text: "Calm", score: 2 },
+      { text: "Calm", score: 6 },
       { text: "Independent", score: 5 },
-      { text: "Irrational", score: 1 },
+      { text: "Irrational", score: 3 },
       { text: "Practical", score: 4 },
     ]
   },

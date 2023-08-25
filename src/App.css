@@ -24,3 +24,7 @@ button {
 .api-pic {
     width: 200px;
 }
+
+p, li {
+    font-size: large;
+}

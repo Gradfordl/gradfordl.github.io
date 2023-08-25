@@ -17,9 +17,6 @@ export default function Pokemon({ finalPokemon }) {
   }
   useEffect(() => {
     getPokemon();
-    // console.log(pokemon.sprites.front_default)
-    // console.log(pokemon.name)
-    // console.log(pokemon.types[0].type.name)
   }, []);
 
   const loaded = () => {
@@ -28,9 +25,8 @@ export default function Pokemon({ finalPokemon }) {
         <h1>Results!</h1>
         <h2>Your Pokemon Personality is...  </h2>
         <h1>{pokemon.name}</h1>
-        <img className="api-pic" src={pokemon.sprites.front_default} />
-        <img className="api-pic" src={pokemon.sprites.back_default} />
-        <p>You have a lot in common with {pokemon.name}! See below for a few fun facts about your pokemon.</p>
+        <img className="api-pic" src={pokemon.sprites.front_default} alt="pokemon image" />
+        <p>You seem to have a lot in common with {pokemon.name}! See below for a few fun facts about your pokemon.</p>
         <ul>
           <li>{pokemon.name} is a {pokemon.types[0].type.name} type pokemon</li>
           <li> It's PokeDex # is {pokemon.id} </li>
