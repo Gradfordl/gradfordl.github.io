@@ -5,10 +5,10 @@ const questions = [
     image: "/images/rainbow.png",
     alt:"Pokemon rainbow",
     options: [
-        { text: "Green", score: 2 },
-        { text: "Yellow", score: 5},
-        { text: "Red", score: 3 },
-        { text: "Blue", score: 4 },
+        { text: "Green", score: 1 },
+        { text: "Yellow", score: 3},
+        { text: "Red", score: 5},
+        { text: "Blue", score: 7 },
     ]
   },
   {
@@ -17,10 +17,10 @@ const questions = [
     image: "/images/squirtle.jpeg",
     alt:"Squirtle on a beach",
     options: [
-        { text: "Beach", score: 4 },
-        { text: "Mountains", score: 6 },
-        { text: "Grand Canyon", score: 5 },
-        { text: "Volcano", score: 3 }
+        { text: "Beach", score: 7 },
+        { text: "Mountains", score: 1 },
+        { text: "Grand Canyon", score: 3 },
+        { text: "Volcano", score: 5 }
     ]
   },
     {
@@ -29,10 +29,10 @@ const questions = [
     image: "/images/pika-donut.gif",
     alt:"Pikachu eating a donut",
     options: [
-        { text: "Donuts" , score: 4 },
-        { text: "Ice cream" , score: 6},
-        { text: "Cupcakes" , score: 2},
-        { text: "Pies" , score: 5 }
+        { text: "Donuts" , score: 1 },
+        { text: "Ice cream" , score: 3},
+        { text: "Cupcakes" , score: 5},
+        { text: "Pies" , score: 7 }
     ]
   },
   {
@@ -42,9 +42,9 @@ const questions = [
   alt:"Eevee and friends",
   options: [
     { text: "Hanging out with friends", score: 5 },
-    { text: "Adventuring outside", score: 3},
-    { text: "Napping in my favorite spot", score: 6},
-    { text: "Splashing around in any water I can find", score: 4},
+    { text: "Adventuring outside", score: 1},
+    { text: "Napping in my favorite spot", score: 3},
+    { text: "Splashing around in any water I can find", score: 7},
   ]
 },
 {
@@ -53,10 +53,10 @@ const questions = [
   image: "/images/jiggly.jpeg",
   alt:"Jigglypuff looking determined",
   options: [
-    { text: "With caution", score: 2 },
+    { text: "With caution", score: 7 },
     { text: "Tackle it" , score: 5 },
     { text: "Wing it", score: 3 },
-    { text: "Scurry away", score: 6},
+    { text: "Scurry away", score: 1},
   ]
 },
 {
@@ -65,9 +65,9 @@ const questions = [
   image: "/images/school.png",
   alt:"Pokemon school",
   options: [
-    { text: "Most artistic", score: 4 },
-    { text: "Class clown", score: 3 },
-    { text: "Most likely to succeed", score: 6 },
+    { text: "Most artistic", score: 7 },
+    { text: "Class clown", score: 1 },
+    { text: "Most likely to succeed", score: 3 },
     { text: "Most athletic", score: 5 },
   ]
 },
@@ -79,7 +79,7 @@ const questions = [
   options: [
     { text: "Standing awkwardly in a corner", score: 5 },
     { text: "At the snack table", score: 6},
-    { text: "On the dance floor", score: 4},
+    { text: "On the dance floor", score: 1},
     { text: "Getting drinks", score: 3 },
   ]
 },
@@ -89,10 +89,10 @@ const questions = [
   image: "/images/char-movie.png",
   alt:"Charmanders watching a movie",
   options: [
-    { text: "Musicals", score: 3 },
+    { text: "Musicals", score: 1 },
     { text: "Action/Adventure", score: 5 },
-    { text: "Horror", score: 4 },
-    { text: "Comedy", score: 6},
+    { text: "Horror", score: 6 },
+    { text: "Comedy", score: 8},
   ]
 },
 {
@@ -101,9 +101,9 @@ const questions = [
   image: "/images/lucario.jpeg",
   alt:"Lucario drinking a drink",
   options: [
-    { text: "Cofffee", score: 5 },
-    { text: "Tea", score: 3 },
-    { text: "Water", score: 6},
+    { text: "Coffee", score: 5 },
+    { text: "Tea", score: 7 },
+    { text: "Water", score: 3},
     { text: "Fruit juice", score: 4 },
   ]
 },
@@ -113,10 +113,10 @@ const questions = [
     image: "/images/psyduck.gif",
     alt:"Psyduck thinking",
     options: [
-      { text: "Calm", score: 6 },
+      { text: "Calm", score: 7 },
       { text: "Independent", score: 5 },
-      { text: "Irrational", score: 3 },
-      { text: "Practical", score: 4 },
+      { text: "Irrational", score: 1 },
+      { text: "Practical", score: 6 },
     ]
   },
 ];
