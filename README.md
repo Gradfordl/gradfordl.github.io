@@ -10,7 +10,7 @@
     I wanted to be able to dynamically display my question components on one single card instead of having to create multiple question pages. I wanted to structure it this way so that in the event I wanted to add more questions, I could simply add data to the array instead of having to add new pages to the file. This project is very React-centered, utilizing hooks, BrowserRouter and more. 
     
 ## Netlify Live Link
-    https://gentle-cheesecake-970f24.netlify.app/
+    find-your-poke-personality.netlify.app
 
 ## Dependencies
     "react": "^18.2.0",
